@@ -1,0 +1,89 @@
+.custom-nav-img {
+    float: right;
+    margin-right: 0.5em;
+    width: 40px;
+    height: 40px;
+}
+
+#year1grades {
+    width: 30%;
+    float: left;
+}
+
+#grades {
+    display: inline-block;
+}
+
+#nav-expand {
+    display: inline;
+    float: left;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10;
+    visibility: hidden;
+}
+
+#div-expand {
+    position: sticky;
+    top: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    background-color: #212529;
+    display: none;
+    color: white;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+#div-expand ul {
+    list-style-type: none;
+}
+
+#div-expand li {
+    margin: 0.5em;
+    border-radius: 1em;
+}
+
+#div-expand li:hover {
+    background-color: #1a1918;
+}
+
+@media screen and (max-width: 1200px) {
+    #grades {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 884px) { /* 778 */
+    nav div a, nav div ul{
+        visibility: hidden;
+    }
+    nav {
+        height: 5em;
+    }
+    #nav-expand {
+        visibility: visible;
+        border-radius: 1.5em;
+    }
+    #nav-expand:hover {
+        background-color: #1a1918;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #grades {
+        display: grid;
+    }
+    #year1grades {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #nav-div {
+        height: 4em;
+    }
+}

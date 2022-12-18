@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./styles.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="modal" id="contactModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Contact Me</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>There are a few ways to contact me:</p>
+                        <ul>
+                            <li>Through LinkedIn: <a href="https://www.linkedin.com/in/aidan-shanley/" target="_blank" rel="noopener noreferrer">Here</a></li>
+                            <li>By phone: 0873670890</li>
+                            <li>By email: aidanshanley@outlook.com</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <div class="container-fluid" id="nav-div">
+                <!-- <span class="navbar-text navbar-brand">Aidan Shanley</span> -->
+                <img src="./images/navbar-expand-image.png" id="nav-expand" onclick="toggleNavBar()">
+                <a href="#" class="navbar-brand">Aidan Shanley</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#intro" class="nav-link">Intro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">IT Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#work-experience" class="nav-link">Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#interests" class="nav-link">Interests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Me</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/Arachy" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/GHLogo.png" class="custom-nav-img" />
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/aidan-shanley/" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/LinkedIn Logo.png" class="custom-nav-img" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid" id="div-expand">
+            <ul>
+                <li>
+                    <a href="#intro" class="nav-link">Intro</a>
+                </li>
+                <li>
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li>
+                    <a href="#skills" class="nav-link">IT Skills</a>
+                </li>
+                <li>
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li>
+                    <a href="#work-experience" class="nav-link">Work Experience</a>
+                </li>
+                <li>
+                    <a href="#interests" class="nav-link">Interests</a>
+                </li>
+                <li>
+                    <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Me</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Arachy" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/aidan-shanley/" target="_blank" rel="noopener noreferrer" class="nav-link">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container-fluid mt-5 pt-5" id="intro">
+            <h2>Introduction</h2>
+            <p>
+                Highly motivated Computer Science student currently in 4th year in TU Dublin Tallaght Campus.<br />
+                Hard working and committed with a problem-solving mindset.<br />
+                Always interested in continuing to learn and grow.<br />
+                Leverage personal strengths such as teamwork, communication and technical skills to make a positive contribution to any team.
+            </p>
+        </div>
+        <div class="container-fluid p-2 mt-2" id="education">
+            <h2 class="mx-1">Education</h2>
+            <p class="mx-1">
+                I'm currently in my final year of a Bachelor of Honours in Computing with Software Development degree in Technological University Dublin Tallaght Campus.<br />
+            </p>
+            <div class="container" id="grades">
+                <div class="container mx-3" id="year1grades">
+                    <h5 class="mx-1">First Year Grades:</h5>
+                    <table class="table table-hover mx-1">
+                        <thead>
+                            <tr>
+                                <th>Module</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Discrete Mathematics 1</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Business & Information Systems</td>
+                                <td>B</td>
+                            </tr>
+                            <tr>
+                                <td>Visual Design and User Experience</td>
+                                <td>B+</td>
+                            </tr>
+                            <tr>
+                                <td>Computer Architecture</td>
+                                <td>B+</td>
+                            </tr>
+                            <tr>
+                                <td>Software Development 1</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Critical Skills Development</td>
+                                <td>C+</td>
+                            </tr>
+                            <tr>
+                                <td>Operating Systems Fundamentals</td>
+                                <td>B+</td>
+                            </tr>
+                            <tr>
+                                <td>Database Fundamentals</td>
+                                <td>B+</td>
+                            </tr>
+                            <tr>
+                                <td>Statistics</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Social Media Communications</td>
+                                <td>B</td>
+                            </tr>
+                            <tr>
+                                <td>Systems Analysis</td>
+                                <td>B</td>
+                            </tr>
+                            <tr>
+                                <td>Software Development 2</td>
+                                <td>B</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container mx-3" id="year1grades">
+                    <h5 class="mx-1">Second Year Grades:</h5>
+                    <table class="table table-hover mx-1">
+                        <thead>
+                            <tr>
+                                <th>Module</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Software Development 3</td>
+                                <td>B+</td>
+                            </tr>
+                            <tr>
+                                <td>Software Quality Assurance and Testing</td>
+                                <td>B+</td>
+                            </tr>
+                            <tr>
+                                <td>Network Fundamentals</td>
+                                <td>B+</td>
+                            </tr>
+                            <tr>
+                                <td>Advanced Database Technologies</td>
+                                <td>B-</td>
+                            </tr>
+                            <tr>
+                                <td>Discrete Mathematics 2</td>
+                                <td>B+</td>
+                            </tr>
+                            <tr>
+                                <td>Client-Side Web Development</td>
+                                <td>B+</td>
+                            </tr>
+                            <tr>
+                                <td>Software Development 4</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Project</td>
+                                <td>B+</td>
+                            </tr>
+                            <tr>
+                                <td>Data Administration and Analysis</td>
+                                <td>B-</td>
+                            </tr>
+                            <tr>
+                                <td>Routing & Switching Essentials</td>
+                                <td>B+</td>
+                            </tr>
+                            <tr>
+                                <td>Information Security</td>
+                                <td>B+</td>
+                            </tr>
+                            <tr>
+                                <td>Management Science</td>
+                                <td>A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container mx-3" id="year1grades">
+                    <h5 class="mx-1">Third Year Grades:</h5>
+                    <table class="table table-hover mx-1">
+                        <thead>
+                            <tr>
+                                <th>Module</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cloud Services and Distributed Computing</td>
+                                <td>B-</td>
+                            </tr>
+                            <tr>
+                                <td>Data Structures and Algorithms</td>
+                                <td>B+</td>
+                            </tr>
+                            <tr>
+                                <td>Server-Side Web Development</td>
+                                <td>B</td>
+                            </tr>
+                            <tr>
+                                <td>Big Data Technologies</td>
+                                <td>B+</td>
+                            </tr>
+                            <tr>
+                                <td>Operating Systems</td>
+                                <td>B</td>
+                            </tr>
+                            <tr>
+                                <td>Innovation & Entrepreneurship</td>
+                                <td>B</td>
+                            </tr>
+                            <tr>
+                                <td>Internship</td>
+                                <td>Pass</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <p class="mx-1">
+                As I am currently in 4th year, I don't have my grades for the modules I'm studying, so here's a list of them:<br />
+                Interactive Media Design, Enterprise App Development, Enterprise Performance Architecture, Continuous Integration and Continuous Deployment, Information Management, and a Final Year Project.
+            </p>
+        </div>
+        <div class="container-fluid p-2 mt-2" id="skills">
+            <h2 class="mx-1">IT Skills</h2>
+            <p class="mx-1">
+                Throughout the 4 years of college and other work experience, I've learned a lot and picked up many skills. Some of which I've listed below:
+            </p>
+            <ul class="list-group list-group-flush w-50" id="skills-list">
+                <li class="list-group-item">Confident developer in Python, JavaScript, C++ and C#</li>
+                <li class="list-group-item">Intermediate level Java and SQL</li>
+                <li class="list-group-item">Experience in designing and creating database schemas</li>
+                <li class="list-group-item">Website development experience using Django, ReactJS, JavaScript, Bootstrap, CSS and HTML</li>
+                <li class="list-group-item">Data analysis using tools like Excel, Tableau and Python</li>
+                <li class="list-group-item">Systems analysis and design using UML</li>
+                <li class="list-group-item">Competent user of Windows and Linux operating systems, including bash scripting and command line usage</li>
+                <li class="list-group-item">Experience in designing, configuring, building and troubleshooting a network of routers and hubs using related tools and Cisco IOS commands</li>
+                <li class="list-group-item">Database administration experience (Oracle 11G) using Enterprise Manager and related SQL commands</li>
+                <li class="list-group-item">Experience using cloud environments such as Azure and Google Cloud Shell</li>
+            </ul>
+        </div>
+        <div class="container-fluid p-2 mt-2" id="projects">
+            <h2 class="mx-1">Projects</h2>
+            <p class="mx-1">
+                During my time in college, I've worked on a number of projects, both in and outside of college, some of which I'll talk about here.
+            </p>
+            <h5 class="mx-2">Food Delivery App</h5>
+            <!-- <img src="./images/HomepageBanner.png" /> maybe have image, maybe not? -->
+            <p class="mx-2">
+                This project was the Second Year Project I completed as part of college. I worked as part of a team with 2 other classmates. We created a web application usign the Django framework in Python. The app was aimed at deli style restaurants/shops (Dunnes Stores, Centra, etc.). The idea of the app was to have restaurant managers sign up and add their restaurant  and menu items to the database so that customers could order food from that restaurant through our website. Some of the features included having user accounts with different permissions so that customers couldn't access areas of the website that were meant only for restaurant managers.<br />
+                <strong>Technologies & Tools Used:</strong> Python, Django, Crispy Forms, Stripe Payment API, Photoshop
+            </p>
+            <h5 class="mx-2">App Opener</h5>
+            <p class="mx-2">
+                This was a solo app I created outside of college to improve workflow using the Tkinter framework. The app opens other apps that the user adds to a list. So instead of opening 5 or 6 different apps manually for work or college, this app does all that for you at the push of a button. Users could create profiles within the app so that you could have different pre-set lists of apps that you could load and open depending on who is using the computer or what they are doing.<br />
+                <strong>Technologies & Tools Used:</strong> Python, Tkinter framework, OS framework, CSV framework
+            </p>
+            <h5 class="mx-2">InsuranceSuite Transistion Explorer</h5>
+            <p class="mx-2">
+                This project was undertaken during my internship in Guidewire with the other interns there at the time. The idea was to allow developers within Guidewire and it's partners easily compare different versions of the <a href="https://www.guidewire.com/products/insurancesuite/">InsuranceSuite products</a>, which consist of PolicyCenter, BillingCenter, and ClaimCenter. As one of the first major projects of my internship, there was a lot of learning involved. This included learning the rough architecture of the InsuranceSuite products, learning React from scratch as I had never used it in college before, and learning internal tools such as Stash for source control and Jira for issue management, all while still making worthwhile contributions to the team and the app. The app allowed users to select a specific product (PolicyCenter, BillingCenter, or ClaimCenter) and then select a source and target version (consisting of both major and minor versions). These 2 product versions were then downloaded to our backend container and an interactive diff view was generated of them using a diff view NPM package.<br />
+                <strong>Technologies & Tools Used:</strong> JavaScript, NodeJS, ReactJS, Docker, react-diff-view (<a href="https://www.npmjs.com/package/react-diff-view">https://www.npmjs.com/package/react-diff-view</a>), some other internal tools
+            </p>
+        </div>
+        <div class="container-fluid p-2 mt-2" id="work-experience">
+            <h2 class="mx-1">Work Experience</h2>
+            <h5 class="mx-2">Sales Assistant - Dunnes Stores Ashleaf Shopping Centre (August 2019 - December 2021)</h5>
+            <p class="mx-2">
+                My main responsibilites invovled helping customers with queries and ensuring shelves were fully stocked and I was sometimes required to help bring deliveries in from the yard. I was also till trained so I was able to help out on the tills when the shop got busy.
+            </p>
+            <h5 class="mx-2">Software Developer Intern - Guidewire Software (February 2022 - August 2022)</h5>
+            <p class="mx-2">
+                I got to spend my 6 month internship at Guidewire in 2 different departments, a consultancy department that works closely with customers and also a product development department that develops Guidewire's core products.<br />
+                The first 3 months of the internship was spent in the consultancy department. Since we, as interns, couldn't work with customers as we weren't qualified enough, we got to work on some internal projects and worked closely with each other as well as with some of the internal tooling teams in Guidewire. During this time, I learned some valuable skills, not only technically like improving my JavaScript skills and learning how ReactJS works, but also related to working in a team and in an agile environment.<br />
+                The last 3 months of the internship was spent in the product development department. I joined one of the teams that was working with Guidewire's Digital products, which are basically front-end apps that work with the core InsuranceSuite products mentioned in the projects section above. My main tasks were working on bug fixes for the upcoming product release (scheduled just after the internship finished). This gave me a chance to get to know Guidewire's front-end applications better, and since these apps used Guidewire's design framework <a href="https://developer.guidewire.com/guidewire-jutro/">Jutro</a> (which is a metadata based UI framework that allows the building of front-end apps with minimal coding), I was also able to learn this and figure out how to add components and modify the apps to resolve the bugs in question.
+            </p>
+        </div>
+        <div class="container-fluid p-2 mt-2" id="interests">
+            <h2 class="mx-1">Interests</h2>
+            <h5 class="mx-2">Work Interests</h5>
+            <p class="mx-2">
+                The type of work I would be interested in is mostly work that requires logical, rational thinking. I want to be challanged and forced to learn or improve my skills continually, whether that be software development related such as coding or designing systems or applications or not.
+            </p>
+            <h5 class="mx-2">Non Work Interests</h5>
+            <p class="mx-2">
+                Outside of work, one of my main daily routines is to go to the gym. I typically like to spend between one and two hours in the gym 5 or 6 days a week.<br />
+                I'm also interested in anything car or motorbike related (thankfully my friends are too). My friends and I have regularly gone to car shows and car events at places like Mondello Park
+            </p>
+        </div>
+    </body>
+</html>
